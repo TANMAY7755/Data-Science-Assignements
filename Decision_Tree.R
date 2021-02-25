@@ -1,7 +1,7 @@
 #::::::::::::::::::::::::::::::sum1::::::::::::::::::
 #import dataset
 #Dataset company_data.csv
-company <- read.csv("D:/TanmayDataScience/assignments/14decision tree/Company_Data.csv")
+company <- read.csv(file.choose())
 View(company)
 str(company)
 
@@ -71,7 +71,7 @@ text(prune.company, pretty=0)
 #
 #dataset fraud_check.csv
 #Import
-fraud<- read.csv("D:/TanmayDataScience/assignments/14decision tree/Fraud_check.csv")
+fraud<-read.csv(file.choose())
 View(fraud)
 str(fraud)
 summary(fraud$Taxable.Income)
