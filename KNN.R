@@ -1,7 +1,7 @@
 #::::::::::::::::::::::::::::::sum1::::::::::::::::::
 #dataset zoo.csv
 #Import data
-glass <- read.csv("D:/TanmayDataScience/assignments/13KNN/zoo.csv")
+glass <- read.csv(file.choose())
 View(glass)
 str(glass)
 
@@ -76,7 +76,7 @@ plot(k.optm,type='b',xlab="k-val",ylab="Accuracy")
 
 #dataset Zoo.csv
 #Import data
-zoo <- read.csv("D:/TanmayDataScience/assignments/13KNN/Zoo.csv")
+zoo <- read.csv(file.choose())
 zoo <- zoo[-1]
 View(zoo)
 
