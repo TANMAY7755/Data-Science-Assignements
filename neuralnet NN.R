@@ -1,6 +1,6 @@
 #::::::::::::::::::::::::::::::sum1::::::::::::::::::
 #Import dataset
-forestfires<-read.csv("D:/TanmayDataScience/assignments/12NN/forestfires (2).csv")
+forestfires<-read.csv(file.choose())
 View(forestfires)
 str(forestfires)
 
