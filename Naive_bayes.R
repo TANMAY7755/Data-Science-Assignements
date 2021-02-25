@@ -1,10 +1,9 @@
 #:::::::::::::::::::::::SUM1:::::::::::::::::::::::::::
 #Import dataset
 #Dataset "Salary_data.csv"
-Salary_Test<- read.csv("D:/TanmayDataScience/assignments/16naive bayess/SalaryData_Test (1).csv")
+Salary_Test<- read.csv(file.choose())
 View(Salary_Test)
-Salary_Train<- read.csv("D:/TanmayDataScience/assignments/16naive bayess/SalaryData_Train (1).csv")
-View(Salary_Train)
+Salary_Train<- read.csv(file.choose())
 str(Salary_Train)
 str(Salary_Test)
 
