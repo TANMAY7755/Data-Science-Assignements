@@ -2,9 +2,9 @@
 
 #da5aset Salarydata.csv
 #Import data
-SalaryData_Train <- read.csv("D:/TanmayDataScience/assignments/11support vector machine SVM/SalaryData_Train(1).csv")
+SalaryData_Train <-read.csv(file.choose())
 View(SalaryData_Train)
-SalaryData_Test <- read.csv("D:/TanmayDataScience/assignments/11support vector machine SVM/SalaryData_Test(1).csv")
+SalaryData_Test <-read.csv(file.choose())
 View(SalaryData_Test)
 SalaryData_Train[['lettr']] = factor(SalaryData_Train[['lettr']])
 
@@ -53,7 +53,7 @@ mean(pred_bessel==SalaryData_Test$Salary) #83.02125
 
 #dataset forestfires.csv
 #import data
-forestfires <- read.csv("D:/TanmayDataScience/assignments/11support vector machine SVM/forestfires.csv")
+forestfires <-read.csv(file.choose())
 View(forestfires)
 
 #checking structure of the data
@@ -95,17 +95,3 @@ pred_bd<-predict(model_bd,newdata=fires_test)
 mean(pred_bd==fires_test$size_category)#71.02804
 
 #Here best fitted models are vanilladot and polydot which gives out same accuracy of 97.19%
-
-
-
-
-
-
-
-
-
-
-
-
-
-
