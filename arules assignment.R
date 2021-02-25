@@ -1,7 +1,7 @@
 #:::::::::::::::::::::::::::;sum1:::::::::::::::::::::::
 ##dataset my_movies.csv
 #importing dataset
-movies<-read.csv("C:/Users/WINDOWS10/Desktop/TanmayDataScience/assignments/8association rules/my_movies.csv")
+movies<-read.csv(file.choose())
 View(movies)
 str(movies[1:5])
 inspect(movies)
@@ -43,8 +43,7 @@ plot(rules.pruned1,method="graph")
 #:::::::::::::::::::::::::::::::::sum2::::::::::::::::::::::::::::::::::
 ##dataset books.csv
 #import dataset
-book <- read.csv("C:/Users/WINDOWS10/Desktop/TanmayDataScience/assignments/8association rules/book.csv")
-View(book)
+book <- read.csv(file.choose())
 str(book)
 summary(as.matrix(book)) 
 
@@ -78,7 +77,7 @@ plot(rules.pruned,method="graph")
 
 ##Dataset (groceries.csv)
 
-groceries<-read.transactions(file="clipboard",format="basket")
+groceries<-read.csv(file.choose())
 View(groceries)
 inspect(groceries[1:10])
 class(groceries)
