@@ -1,6 +1,6 @@
 #:::::::::::::::::::::::::sum1::::::::::::::::::::::::::::
 #import dataset.
-bank.full <- read.csv("C:/Users/WINDOWS10/Desktop/TanmayDataScience/assignments/6LOGISTIC/bank-full.csv", sep=";")
+bank.full <- read.csv(file.choose())
 View(bank.full)
 
 #calculating and omiting NA values.
