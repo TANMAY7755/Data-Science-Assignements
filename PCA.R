@@ -7,7 +7,7 @@
 
 #:::::::::::::::::::::sum1::::::::::::::::::::::::::
 #import data
-wine <- read.csv("D:/TanmayDataScience/assignments/9PCA/wine (1).csv")
+wine <- read.csv(file.choose())
 View(wine)
 str(wine)
 #deleting the first column which has ID's
