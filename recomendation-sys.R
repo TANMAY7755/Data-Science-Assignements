@@ -1,6 +1,6 @@
 #:::::::::::::::::::::sum1:::::::::::::::::::::
 #import data
-book <- read.csv("D:/TanmayDataScience/assignments/10reccomendation sys/book.csv")
+book <- read.csv(file.choose())
 #deleting book$X which is an index variable.
 book1<- subset(book,select = -X)
 View(book1)
