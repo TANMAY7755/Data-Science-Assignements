@@ -1,7 +1,7 @@
 #::::::::::::::::::sum1::::::::::::::::::
 
 #Import dataset
-Salary_Data <- read.csv("C:/Users/WINDOWS10/Desktop/TanmayDataScience/assignments/4simple   .linear regression/Salary_Data.csv")
+Salary_Data <- read.csv(file.choose())
 View(Salary_Data)
 attach(Salary_Data)
 #Plot
@@ -35,7 +35,7 @@ predict(reg, newdata = new.yearexp, interval = "prediction")
 #::::::::::::::::::::::::::::;sum2;:::::::::::::::::::::::::::::::
   
 #Import dataset
-delivery_time <- read.csv("C:/Users/WINDOWS10/Desktop/TanmayDataScience/assignments/4simple linear regression/delivery_time.csv")
+delivery_time <- read.csv(file.choose())
 View(delivery_time)
 attach(delivery_time)
 #Plot
