@@ -4,7 +4,7 @@
 #LIBRARY
 library(readr)
 setwd("D:\\TanmayDataScience\\assignments\\18forcasting")
-PlasticSales <- read.csv("D:/TanmayDataScience/assignments/18forcasting/PlasticSales.csv")
+PlasticSales <- read.csv(file.choose())
 View(PlasticSales) # read the cocacola data
 # Seasonality 12 months 
 windows()
@@ -143,8 +143,7 @@ View(pred_new_sales)
 ####################################################SUM2##############
 library(readxl)
 library(readr)
-airline <- read.table(file = "clipboard", 
-                      sep = "\t", header=TRUE)
+airline <- read.csv(file.choose())
 View(airline)
 #Seasonality 12 months 
 windows()
